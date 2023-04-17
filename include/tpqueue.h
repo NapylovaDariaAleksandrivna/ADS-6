@@ -28,14 +28,13 @@ class TPQueue {
             int i = last - 1;
             bool op = 0;
             ////////////
-            if(i >= first && value.prior > arr[i].prior) {
+            if (i >= first && value.prior > arr[i].prior) {
                 while (i >= first && value.prior > arr[i].prior) {
                 op = 1;
                 arr[i + 1] = arr[i];
                 arr[i] = value;
                 i--;
                 }
-            
             } else {
                 arr[last] = value;
             }
